@@ -1,23 +1,20 @@
 package Complementarios_1;
+import java.util.Scanner;
 
 
 public class ejercicio1 {
-    public static void main (String [] args){
-       mostrar();    
+
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+ 
+        System.out.println("Ingresar nombre del usuario  : ");
+        String nombre = scan.nextLine();
+               
+        System.out.println("HOLA "+ nombre +"!!!");
+
+        scan.close();
     }
 
-    public static void mostrar(){
-        System.out.print("ingrese su nombre: ");
-        holamundo(captarpalabra());
-    }
-    public static String captarpalabra() {
-        String  palabra= System.console().readLine();
-        return palabra;
-    }
-
-    public static void holamundo(String palabra){
-        System.out.println("Hola "+palabra);
-
-    }
 
 }
